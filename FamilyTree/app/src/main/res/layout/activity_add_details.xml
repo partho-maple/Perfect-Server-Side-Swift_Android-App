@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.emmasuzuki.easyform.EasyForm
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_form"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    app:submitButton="@+id/submit_button"
+    app:showErrorOn="unfocus">
+
+    <LinearLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.emmasuzuki.easyform.EasyTextInputLayout
+            android:id="@+id/first_name_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/first_name"
+            app:errorMessage="@string/error_message_empty"
+            app:errorType="empty" />
+
+        <com.emmasuzuki.easyform.EasyTextInputLayout
+            android:id="@+id/last_name_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:hint="@string/last_name"
+            app:errorMessage="@string/error_message_empty"
+            app:errorType="empty" />
+    </LinearLayout>
+
+    <com.emmasuzuki.easyform.EasyTextInputLayout
+        android:id="@+id/ssn_id_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="8dp"
+        android:hint="@string/ssn_id"
+        app:errorMessage="@string/error_message_empty"
+        app:errorType="empty"/>
+
+    <com.emmasuzuki.easyform.EasyTextInputLayout
+        android:id="@+id/gender_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ssn_id_input"
+        android:layout_marginTop="8dp"
+        android:hint="@string/gender"
+        app:errorMessage="@string/error_message_empty"
+        app:minChars="2"
+        app:errorType="empty"/>
+
+    <com.emmasuzuki.easyform.EasyTextInputLayout
+        android:id="@+id/birth_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gender_input"
+        android:layout_marginTop="8dp"
+        android:hint="@string/date_of_birth"
+        android:inputType="date"
+        app:errorType="empty" />
+
+    <com.emmasuzuki.easyform.EasyTextInputLayout
+        android:id="@+id/death_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birth_date_input"
+        android:layout_marginTop="8dp"
+        android:hint="@string/date_of_Death"
+        android:inputType="date"
+        app:errorMessage="@string/error_message_empty"  />
+
+    <com.emmasuzuki.easyform.EasyTextInputLayout
+        android:id="@+id/relation_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/death_date_input"
+        android:layout_marginTop="8dp"
+        android:hint="@string/relation"
+        app:errorMessage="@string/error_message_empty"  />
+
+    <Button
+        android:id="@id/submit_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/submit_btn"
+        android:textColor="@android:color/white" />
+
+    <com.developers.coolprogressviews.DoubleArcProgress
+        android:id="@+id/progress_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:insideArcRadius="50dp"
+        app:outsideArcRadius="100dp"
+        app:insideArcColor="@color/colorPrimary"
+        app:outsideArcColor="@color/colorPrimary" />
+
+</com.emmasuzuki.easyform.EasyForm>
