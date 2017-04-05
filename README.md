@@ -1,4 +1,4 @@
-# Perfect: Server-Side Swift(iOS Client)
+# Perfect: Server-Side Swift(Android Client)
 
 <p align="center">
 <a href="https://developer.apple.com/swift/" target="_blank">
@@ -33,7 +33,10 @@ An Android client app displaaying and managing family tree consuming REST API se
 The API server implementation along with a native iOS client of this Android app is also available at this [repository](https://github.com/partho-maple/Perfect-Server-Side-Swift_iOS-App).
 
 ## Setup and configurations
-![preview](/Setup.docx?raw=true) 
+A detailed setup and configuration guide can be found [here](https://github.com/partho-maple/Perfect-Server-Side-Swift_Android-App/blob/master/Setup.pdf). 
+
+## Architecture and design
+A detailed architectural design guide of the app can be found [here](https://github.com/partho-maple/Perfect-Server-Side-Swift_Android-App/blob/master/Design%20Details.pdf).
 
 ## Contributing
 
